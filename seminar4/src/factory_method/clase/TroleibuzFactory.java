@@ -1,0 +1,8 @@
+package factory_method.clase;
+
+public class TroleibuzFactory implements Factory {
+    @Override
+    public MijlocTransport getMijlocTransport(String nrInmatriculare) {
+        return new Troleibuz(nrInmatriculare);
+    }
+}
